@@ -23,13 +23,13 @@ p_stroke_elderly <- mean(df$stroke[df$age >= 60])
 p_stroke_glucose <- mean(df$stroke[df$glucose_outlier_flag == 1])
 
 # ── Color palette ─────────────────────────────────────────────────────────
-NAV   <- "#1a3a4a"
-TEAL  <- "#2a9d8f"
-LTEAL <- "#4db6ac"
-NAVY2 <- "#264653"
-WARN  <- "#e76f51"
-MED   <- "#e9c46a"
-OK    <- "#2a9d8f"
+NAV   <- as.character("#1a3a4a")
+TEAL  <- as.character("#2a9d8f")
+LTEAL <- as.character("#4db6ac")
+NAVY2 <- as.character("#264653")
+WARN  <- as.character("#e76f51")
+MED   <- as.character("#e9c46a")
+OK    <- as.character("#2a9d8f")
 
 # ── Shared theme ──────────────────────────────────────────────────────────
 theme_app <- function(){
