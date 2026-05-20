@@ -31,9 +31,9 @@ Stroke is the second leading cause of death globally and a leading cause of long
 | smoking_status | Categorical | never smoked, formerly smoked, smokes, Unknown |
 | stroke | Binary | 1 = had stroke (outcome variable) |
 
----
-
 ## Project Structure
+
+```
 stroke_prediction/
 ├── app.R                        # Shiny web application
 ├── stroke_analysis.R            # Full analysis script (Parts 1-6)
@@ -41,6 +41,7 @@ stroke_prediction/
 ├── roc_data.rds                 # ROC data for all three models
 ├── stroke_data_cleaned.csv      # Cleaned dataset with engineered features
 └── README.md
+```
 
 ---
 
@@ -161,3 +162,7 @@ Three stakeholder tabs:
 ## Author
 
 **Bruce Onyango**  
+
+## Acknowledgements
+
+Built with guidance from [Claude](https://claude.ai) (Anthropic) — used as a technical collaborator throughout the analytical pipeline including data wrangling decisions, SMOTE implementation, model evaluation strategy, threshold tuning, and Shiny app architecture.
