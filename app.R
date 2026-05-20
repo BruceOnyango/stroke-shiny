@@ -35,14 +35,14 @@ OK    <- "#2a9d8f"
 theme_app <- function(){
   theme_minimal(base_size=13) +
     theme(
-      plot.title       = element_text(face="bold", size=14, colour=NAV),
+      plot.title       = element_text(face="bold", size=14, colour="#1a3a4a"),
       plot.subtitle    = element_text(size=11, colour="#555"),
       legend.position  = "bottom",
       panel.grid.minor = element_blank()
     )
 }
 
-COLOURS <- c("No Stroke"=LTEAL, "Stroke"=NAV)
+COLOURS <- c("No Stroke"="#4db6ac", "Stroke"="#1a3a4a")
 
 # ── UI ────────────────────────────────────────────────────────────────────
 ui <- fluidPage(
