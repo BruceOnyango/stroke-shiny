@@ -585,6 +585,15 @@ ui <- fluidPage(
 
 # ── SERVER ────────────────────────────────────────────────────────────────
 server <- function(input, output){
+   # ── Colors defined inside server scope ───────────────────────────────
+  NAV     <- "#1a3a4a"
+  TEAL    <- "#2a9d8f"
+  LTEAL   <- "#4db6ac"
+  NAVY2   <- "#264653"
+  WARN    <- "#e76f51"
+  MED     <- "#e9c46a"
+  OK      <- "#2a9d8f"
+  COLOURS <- c("No Stroke"="#4db6ac", "Stroke"="#1a3a4a") 
   
   # ── Prediction ──────────────────────────────────────────────────────────
   prediction <- eventReactive(input$predict, {
